@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(204, 193, 193);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.container .card{
+    position: relative;
+    min-width: 310px;
+    height: 430px;
+    box-shadow: inset 6px 6px 6px rgb(181, 241, 125),
+            inset -6px -6px 6px rgb(236, 217, 110),
+            6px 6px 6px rgb(181, 241, 125),
+            -6px -6px 6px rgb(236, 217, 110);
+    margin: 30px;  
+    border-radius: 15px;      
+}
+
+.container .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: rgb(136, 124, 124);
+    box-shadow: 0 10px 20px black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+}
+
+.container .card:hover .box{
+    
+    transform: translateY(-50PX);
+    box-shadow: 0 10px 400px rgb(73, 70, 70);
+    background: linear-gradient(50deg,#8c23bb,#1120e9);
+}
+
+.container .card .box .content{
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .box .content h2{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 6.5em;
+    color: #ffff;}
+    
+.container .card:hover .box .content h2{
+    color: rgb(158, 158, 147);
+
+}
+.container .card .box .content h3{
+    font-size: 1.8em;
+    color: #ffff;
+    z-index: 1;
+    transition: .5s;
+}
+
+.container .card .box .content p{
+
+    font-size: 1em;
+    font-weight: 300;
+    color:  #ffff;
+    z-index: 1;
+    transition: .5s;
+}
+
+.container .card .box .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgb(130, 83, 238);
+    margin-top: 20px;
+    border-radius: 20px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px blue;
+    text-transform: uppercase;
+
+}
+
+.container .card:hover .box .content a{
+    background: rgb(63, 24, 136);
+}
+
